@@ -1,0 +1,9 @@
+input_data/*
+data_preprocessed
+output
+__pycache__
+*.tfevents.*
+*.log
+.idea
+*.csv
+sentiws
