@@ -12,14 +12,11 @@ from src.moduls.config import PipeConfig
 # Define the base directory relative to the current file
 base_dir = os.path.dirname(os.path.abspath(__file__))
 
-# Initialize the stemmer for German
-german_stemmer = SnowballStemmer("german")
-
-# Load the English language model
-nlp = spacy.load("de_core_news_lg")
+# Load the English language model with spacy
+nlp = spacy.load('en_core_web_sm')
 
 regular_punct = r".?!:\"',"
-tag_include = {'PIDAT', 'PIAT', 'NN', 'NE', 'ADJA', 'ADJD', 'VVFIN', 'VVINF', 'VVPP', 'VMPP', 'VAPP', 'VVPP', 'VVIZU'}
+tag_include = {'NOUN', 'VERB', 'ADJ', 'PROPN'}
 
 relevant_words = set()
 additional_stopwords = set()
@@ -49,10 +46,9 @@ def relevant_token(token, text, lemma):
         return True
     if is_stopword(text) or is_stopword(lemma):
         return False
-    return token.tag_ in tag_include
+    return token.pos_ in tag_include
 
 def txt_cleaning(txt):
-    txt = regex.sub(r"\[DE\]", "", txt)
     txt = regex.sub(r"\(.*?\)", "", txt)
     txt = regex.sub(r"<.*?>", "", txt)
     txt = regex.sub(r"\[.*?\]", "", txt)
@@ -102,7 +98,7 @@ def spacy_tags(txt):
     doc = nlp(txt)
     tokens = [token for token in doc if not token.is_punct]
     # return postags
-    return [[token.lemma_.lower(), token.pos_, token.tag_] for token in tokens]
+    return [[token.lemma_.lower(), token.pos_] for token in tokens]
 
 def remove_consecutive_word_groups(txt):
     txt = txt + ' '

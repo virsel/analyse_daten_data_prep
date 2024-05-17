@@ -1,6 +1,6 @@
 import unittest
 
-from src.moduls.pipeline_de import txt_cleaning
+from src.moduls.pipeline_de import txt_cleaning, spacy_tokenize
 
 class TestTxtCleaning(unittest.TestCase):
     def test_remove_de(self):
@@ -18,6 +18,10 @@ class TestTxtCleaning(unittest.TestCase):
         
     def test_duplicate_special_chars_removal(self):
         self.assertEqual("vor einer Strahlungs und oder Objektquelle.", txt_cleaning("vor einer Strahlungs- und/oder Objektquelle (22)."))
+        
+class TestTokenizing(unittest.TestCase):
+    def test_duplicate_special_chars_removal(self):
+        self.assertEqual("vor einer Strahlungs und roboter oder Objektquelle.", spacy_tokenize("vor einer Strahlungs und roboter oder Objektquelle."))
         
     
 
