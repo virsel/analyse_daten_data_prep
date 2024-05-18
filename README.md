@@ -15,9 +15,9 @@ European Patent Office (EP), Deutschland (DE), United Kingdom (GB), Spanien (ES)
 
 **Asia Daten:**
 ```
-AC=(CN OR JP)
+AC=(CN)
 ```
-China (CN), Japan (JP)  
+China (CN)  
 106368 Treffer
 
 **America**
