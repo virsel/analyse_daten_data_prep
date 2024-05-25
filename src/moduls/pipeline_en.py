@@ -7,7 +7,7 @@ import regex
 import spacy
 from nltk.stem.snowball import SnowballStemmer
 
-from src.moduls.config import PipeConfig
+from moduls.config import PipeConfig
 
 # Define the base directory relative to the current file
 base_dir = os.path.dirname(os.path.abspath(__file__))
