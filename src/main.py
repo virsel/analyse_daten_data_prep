@@ -2,19 +2,19 @@ from config import Config
 import pandas as pd
 from _2_preproc_pipeline_en.main import pipe_preproc as pipe_preproc_en
 from _2_preproc_pipeline_de.main import pipe_preproc as pipe_preproc_de
-from utils import read_data
+from utils import get_data
 from _1_data_prepared_input.utils import pipe_arrangement
 from pathlib import Path
 import os
 
 # absolute file path
-abs_path = Path(os.path.abspath(__file__))
+abs_path = Path(os.path.abspath(__file__)).parent
 data_out_path = str(abs_path / '../output/data_corpus.csv')
 
 if __name__ == '__main__':
     cfg = Config()
     
-    df = read_data()
+    df = get_data()
     
     df = pipe_arrangement(df)
     
