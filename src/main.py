@@ -27,7 +27,7 @@ if __name__ == '__main__':
     df = pd.concat([df_en, df_de])
     
     
-    df = pipe_emb(df)
+    # df = pipe_emb(df)
     
     print(f"saving columns {df.columns} to {data_out_path}")
     df.to_csv(data_out_path, index=False)
