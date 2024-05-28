@@ -1,6 +1,5 @@
 *.xls
 data_preprocessed
-output
 __pycache__
 *.tfevents.*
 *.log
