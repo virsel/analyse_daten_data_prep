@@ -17,7 +17,41 @@ European Patent Office (EP), Deutschland (DE), United Kingdom (GB), Spanien (ES)
 
 **Asia Daten:**
 ```
-AC=(CN)
+  (TI =  (robot? OR telerobot? OR exoskeleton? OR ((bionic OR intelligent?)(2A)prosthet?))
+    OR 
+  AB = (robot? OR telerobot? OR exoskeleton? OR ((bionic OR intelligent?)(2A)prosthet?)))
+AND ( Pub >= 01.01.2022 AND Pub <= 01.03.2022)
+AND AC = (CN)
+
+  (TI =  (robot? OR telerobot? OR exoskeleton? OR ((bionic OR intelligent?)(2A)prosthet?))
+    OR 
+  AB = (robot? OR telerobot? OR exoskeleton? OR ((bionic OR intelligent?)(2A)prosthet?)))
+AND ( Pub > 01.03.2022 AND Pub <= 05.05.2022 ) 
+AND AC = (CN) 
+
+  (TI =  (robot? OR telerobot? OR exoskeleton? OR ((bionic OR intelligent?)(2A)prosthet?))
+    OR 
+  AB = (robot? OR telerobot? OR exoskeleton? OR ((bionic OR intelligent?)(2A)prosthet?)))
+AND ( Pub > 05.05.2022 AND Pub <= 05.07.2022 ) 
+AND AC = (CN) 
+
+  (TI =  (robot? OR telerobot? OR exoskeleton? OR ((bionic OR intelligent?)(2A)prosthet?))
+    OR 
+  AB = (robot? OR telerobot? OR exoskeleton? OR ((bionic OR intelligent?)(2A)prosthet?)))
+AND ( Pub > 05.07.2022 AND Pub <= 05.09.2022 ) 
+AND AC = (CN) 
+
+  (TI =  (robot? OR telerobot? OR exoskeleton? OR ((bionic OR intelligent?)(2A)prosthet?))
+    OR 
+  AB = (robot? OR telerobot? OR exoskeleton? OR ((bionic OR intelligent?)(2A)prosthet?)))
+AND ( Pub > 05.09.2022 AND Pub <= 05.11.2022 ) 
+AND AC = (CN) 
+
+  (TI =  (robot? OR telerobot? OR exoskeleton? OR ((bionic OR intelligent?)(2A)prosthet?))
+    OR 
+  AB = (robot? OR telerobot? OR exoskeleton? OR ((bionic OR intelligent?)(2A)prosthet?)))
+AND ( Pub > 05.11.2022 AND Pub <= 31.12.2022 ) 
+AND AC = (CN) 
 ```
 China (CN)  
 106368 Treffer

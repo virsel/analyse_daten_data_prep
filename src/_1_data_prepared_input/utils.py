@@ -10,7 +10,7 @@ def get_description(ipc):
         except ValueError:
             raise
         except AttributeError as e:
-            print(f"attr err on {ipc}")
+            # print(f"attr err on {ipc}")
             return Ipc(ipc).section.description
 
 def ipc_to_description(ipc):
@@ -22,7 +22,7 @@ def ipc_to_description(ipc):
         try:
             return get_description(ipc)
         except:
-            print(f"err on {ipc}")
+            # print(f"err on {ipc}")
             ipc = ipc[:-1]
         i += 1
     return ''
@@ -37,6 +37,8 @@ def arrange_ipc(df):
     
     df['ipc'] = df['ipc_main'].apply(ipc_to_description)
     df.drop(columns=['ipc_main', 'ipc_sub'], inplace=True)
+    
+    df = df[df['ipc'] != '']
     
     return df
 
@@ -69,11 +71,16 @@ def pipe_arrangement(df):
     
     df.dropna(subset=['abstract'], inplace=True)
     df['pub_date'] = pd.to_datetime(df['pub_date'], format='%d.%m.%Y')
+    df['pub_date'] = df['pub_date'].dt.to_period('M')
+    
+    start_date = '2022-01'
+    end_date = '2024-04'
+    df = df[(df['pub_date'] >= start_date) & (df['pub_date'] <= end_date)]
+
     df_filtered = df.sort_values(by='pub_date', ascending=False).drop_duplicates(subset='abstract')
     
-    df_filtered['pub_year'] = df_filtered['pub_date'].dt.year
     df_filtered['text'] = df_filtered['title'] + '. ' + df_filtered['abstract']
-    df_filtered.drop(columns=['title', 'abstract', 'pub_date'], inplace=True)
+    df_filtered.drop(columns=['title', 'abstract'], inplace=True)
     
     df_res = arrange_ipc(df_filtered)
     
