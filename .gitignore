@@ -1,4 +1,4 @@
-input_data/*
+*.xls
 data_preprocessed
 output
 __pycache__
