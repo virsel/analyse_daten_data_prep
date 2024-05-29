@@ -6,8 +6,8 @@ import os
 
 # absolute file path
 abs_path = Path(os.path.abspath(__file__)).parent
-data_path = str(abs_path / '../output/data_corpus.csv')
-dataemb_out_path = str(abs_path / '../output/dataemb_corpus.csv')
+data_path = str(abs_path / '../../output/data_corpus.csv')
+dataemb_out_path = str(abs_path / '../../output/dataemb_corpus.csv')
 
 model = SentenceTransformer('distiluse-base-multilingual-cased-v1')
 
@@ -30,7 +30,7 @@ def pipe_emb(df):
 
     return df[['id', 'emb', 'emb_reduced', 'emb_reduced_2d']]
 
-if "__name__" == "__main__":
+if __name__ == "__main__":
     df = pd.read_csv(data_path)
     df = pipe_emb(df)
     print(f"saving columns {df.columns} to {dataemb_out_path}")
