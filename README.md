@@ -17,6 +17,8 @@ European Patent Office (EP), Deutschland (DE), United Kingdom (GB), Spanien (ES)
 
 **Asia Daten:**
 ```
+2022
+
   (TI =  (robot? OR telerobot? OR exoskeleton? OR ((bionic OR intelligent?)(2A)prosthet?))
     OR 
   AB = (robot? OR telerobot? OR exoskeleton? OR ((bionic OR intelligent?)(2A)prosthet?)))
@@ -51,7 +53,13 @@ AND AC = (CN)
     OR 
   AB = (robot? OR telerobot? OR exoskeleton? OR ((bionic OR intelligent?)(2A)prosthet?)))
 AND ( Pub > 05.11.2022 AND Pub <= 31.12.2022 ) 
-AND AC = (CN) 
+AND AC = (CN)
+
+
+2023
+
+
+
 ```
 China (CN)  
 106368 Treffer
