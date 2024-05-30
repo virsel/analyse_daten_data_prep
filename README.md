@@ -58,7 +58,35 @@ AND AC = (CN)
 
 2023
 
+  (TI =  (robot? OR telerobot? OR exoskeleton? OR ((bionic OR intelligent?)(2A)prosthet?))
+    OR 
+  AB = (robot? OR telerobot? OR exoskeleton? OR ((bionic OR intelligent?)(2A)prosthet?)))
+AND ( Pub >= 01.01.2023 AND Pub <= 15.03.2023)
+AND AC = (CN)
 
+  (TI =  (robot? OR telerobot? OR exoskeleton? OR ((bionic OR intelligent?)(2A)prosthet?))
+    OR 
+  AB = (robot? OR telerobot? OR exoskeleton? OR ((bionic OR intelligent?)(2A)prosthet?)))
+AND ( Pub > 15.03.2023 AND Pub <= 01.05.2023)
+AND AC = (CN)
+
+  (TI =  (robot? OR telerobot? OR exoskeleton? OR ((bionic OR intelligent?)(2A)prosthet?))
+    OR 
+  AB = (robot? OR telerobot? OR exoskeleton? OR ((bionic OR intelligent?)(2A)prosthet?)))
+AND ( Pub > 01.05.2023 AND Pub <= 01.06.2023)
+AND AC = (CN)
+
+  (TI =  (robot? OR telerobot? OR exoskeleton? OR ((bionic OR intelligent?)(2A)prosthet?))
+    OR 
+  AB = (robot? OR telerobot? OR exoskeleton? OR ((bionic OR intelligent?)(2A)prosthet?)))
+AND ( Pub > 01.06.2023 AND Pub <= 01.07.2023)
+AND AC = (CN)
+
+  (TI =  (robot? OR telerobot? OR exoskeleton? OR ((bionic OR intelligent?)(2A)prosthet?))
+    OR 
+  AB = (robot? OR telerobot? OR exoskeleton? OR ((bionic OR intelligent?)(2A)prosthet?)))
+AND ( Pub > 01.07.2023 AND Pub <= 01.08.2023)
+AND AC = (CN)
 
 ```
 China (CN)  

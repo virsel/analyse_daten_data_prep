@@ -5,35 +5,10 @@ from pathlib import Path
 # absolute file path
 abs_path = Path(os.path.abspath(__file__)).parent
 
-
-def read_data(path):
-    df = pd.read_excel(
-        path,
-        header=1,
-        usecols=[
-            "Veröffentlichungs-Nummer",
-            "Titel",
-            "Zusammenfassung",
-            "Veröffentlichungs-Datum",
-            "IPC-Hauptklasse",
-            "IPC-Neben-/Indexklassen",
-        ],
-    )
-
-    return df
-
-
 def read_data_us():
     data_folder = str(abs_path / "../input_data/us")
-    data_path1 = str(Path(data_folder) / "2022.xls")
-    data_path2 = str(Path(data_folder) / "2023.xls")
-    data_path3 = str(Path(data_folder) / "2024.xls")
-
-    df1 = read_data(data_path1)
-    df2 = read_data(data_path2)
-    df3 = read_data(data_path3)
-
-    df = pd.concat([df1, df2, df3], ignore_index=True)
+    data_path = str(Path(data_folder) / "combinded_data.csv")
+    df = pd.read_csv(data_path)
 
     df["origin"] = "america"
 
@@ -43,15 +18,9 @@ def read_data_us():
 
 def read_data_ch():
     data_folder = str(abs_path / "../input_data/ch")
-    data_path1 = str(Path(data_folder) / "2022.xls")
-    data_path2 = str(Path(data_folder) / "2023.xls")
-    data_path3 = str(Path(data_folder) / "2024.xls")
-
-    df1 = read_data(data_path1)
-    df2 = read_data(data_path2)
-    df3 = read_data(data_path3)
-
-    df = pd.concat([df1, df2, df3], ignore_index=True)
+    data_path = str(Path(data_folder) / "combinded_data.csv")
+    df = pd.read_csv(data_path)
+    
     df["origin"] = "asia"
     # concatenate the dataframes
     return df
@@ -59,15 +28,8 @@ def read_data_ch():
 
 def read_data_eu():
     data_folder = str(abs_path / "../input_data/eu")
-    data_path1 = str(Path(data_folder) / "2022.xls")
-    data_path2 = str(Path(data_folder) / "2023.xls")
-    data_path3 = str(Path(data_folder) / "2024.xls")
-
-    df1 = read_data(data_path1)
-    df2 = read_data(data_path2)
-    df3 = read_data(data_path3)
-
-    df = pd.concat([df1, df2, df3], ignore_index=True)
+    data_path = str(Path(data_folder) / "combinded_data.csv")
+    df = pd.read_csv(data_path)
 
     df["origin"] = "eu"
 
