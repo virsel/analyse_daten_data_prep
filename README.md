@@ -58,7 +58,55 @@ AND AC = (CN)
 
 2023
 
+  (TI =  (robot? OR telerobot? OR exoskeleton? OR ((bionic OR intelligent?)(2A)prosthet?))
+    OR 
+  AB = (robot? OR telerobot? OR exoskeleton? OR ((bionic OR intelligent?)(2A)prosthet?)))
+AND ( Pub >= 01.01.2023 AND Pub <= 15.03.2023)
+AND AC = (CN)
 
+  (TI =  (robot? OR telerobot? OR exoskeleton? OR ((bionic OR intelligent?)(2A)prosthet?))
+    OR 
+  AB = (robot? OR telerobot? OR exoskeleton? OR ((bionic OR intelligent?)(2A)prosthet?)))
+AND ( Pub > 15.03.2023 AND Pub <= 25.05.2023)
+AND AC = (CN)
+
+  (TI =  (robot? OR telerobot? OR exoskeleton? OR ((bionic OR intelligent?)(2A)prosthet?))
+    OR 
+  AB = (robot? OR telerobot? OR exoskeleton? OR ((bionic OR intelligent?)(2A)prosthet?)))
+AND ( Pub > 25.05.2023 AND Pub <= 25.07.2023)
+AND AC = (CN)
+
+  (TI =  (robot? OR telerobot? OR exoskeleton? OR ((bionic OR intelligent?)(2A)prosthet?))
+    OR 
+  AB = (robot? OR telerobot? OR exoskeleton? OR ((bionic OR intelligent?)(2A)prosthet?)))
+AND ( Pub > 25.07.2023 AND Pub <= 05.10.2023)
+AND AC = (CN)
+
+  (TI =  (robot? OR telerobot? OR exoskeleton? OR ((bionic OR intelligent?)(2A)prosthet?))
+    OR 
+  AB = (robot? OR telerobot? OR exoskeleton? OR ((bionic OR intelligent?)(2A)prosthet?)))
+AND ( Pub > 05.10.2023 AND Pub <= 30.11.2023)
+AND AC = (CN)
+
+  (TI =  (robot? OR telerobot? OR exoskeleton? OR ((bionic OR intelligent?)(2A)prosthet?))
+    OR 
+  AB = (robot? OR telerobot? OR exoskeleton? OR ((bionic OR intelligent?)(2A)prosthet?)))
+AND ( Pub > 30.11.2023 AND Pub <= 31.12.2023)
+AND AC = (CN)
+
+2024
+
+  (TI =  (robot? OR telerobot? OR exoskeleton? OR ((bionic OR intelligent?)(2A)prosthet?))
+    OR 
+  AB = (robot? OR telerobot? OR exoskeleton? OR ((bionic OR intelligent?)(2A)prosthet?)))
+AND ( Pub >= 01.01.2024 AND Pub <= 15.03.2024)
+AND AC = (CN)
+
+  (TI =  (robot? OR telerobot? OR exoskeleton? OR ((bionic OR intelligent?)(2A)prosthet?))
+    OR 
+  AB = (robot? OR telerobot? OR exoskeleton? OR ((bionic OR intelligent?)(2A)prosthet?)))
+AND ( Pub >= 15.03.2024)
+AND AC = (CN)
 
 ```
 China (CN)  
